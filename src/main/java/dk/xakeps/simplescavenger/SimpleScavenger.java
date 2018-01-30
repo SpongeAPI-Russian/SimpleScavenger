@@ -29,7 +29,7 @@ import java.util.Optional;
 
 @Plugin(id = "simplescavenger",
         name = "Simple Scavenger",
-        version = "1.0",
+        version = "2.0",
         description = "Keeps inventory and xp for players with permission",
         url = "https://spongeapi.com",
         authors = "Xakep_SDK")
