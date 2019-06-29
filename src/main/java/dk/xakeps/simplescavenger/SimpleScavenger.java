@@ -29,7 +29,7 @@ import java.util.Optional;
 
 @Plugin(id = "simplescavenger",
         name = "Simple Scavenger",
-        version = "2.0",
+        version = "2.1",
         description = "Keeps inventory and xp for players with permission",
         url = "https://spongeapi.com",
         authors = "Xakep_SDK")
@@ -135,7 +135,7 @@ public class SimpleScavenger {
     private void saveConfig(Path configDir, PluginContainer container) throws IOException {
         Optional<Asset> asset = container.getAsset("simplescavenger.conf");
         if (asset.isPresent()) {
-            asset.get().copyToDirectory(configDir, true);
+            asset.get().copyToDirectory(configDir);
         } else {
             throw new RuntimeException("Can't save plugin config!");
         }
